@@ -1,0 +1,5 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "eslint.autoFixOnSave": true,
+    "git.ignoreLimitWarning": true
+}
