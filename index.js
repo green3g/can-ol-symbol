@@ -37,7 +37,7 @@ Component.extend({
   view: `
   <ul>
   <li>Center: {{map.view.center.0}}, {{map.view.center.1}}</li>
-  <li>: {{map.view.resolution}}</li>
+  <li>Scale: {{map.view.resolution}}</li>
   {{#for(layer of map.layergroup.layers)}}<li>{{layer.title}}</li>{{/for}}
   </ul>
 <p>{{map.layergroup.layers.length}}</p>
