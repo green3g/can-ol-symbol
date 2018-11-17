@@ -12,7 +12,11 @@ assignCanListSymbols(Collection.prototype);
 const array = new Collection(['hi', 'hey', 'hello']);
 
 document.body.appendChild(stache(`
+  {{#if(array.length)}}
   {{#for(a of array)}}<li>{{a}}</li>{{/for}}
+  {{else}}
+  Empty
+  {{/if}}
 `)({
   array,
 }));
@@ -27,4 +31,4 @@ setTimeout(() => {
 
 setTimeout(() => {
   array.clear();
-}, 10000);
+}, 5000);
